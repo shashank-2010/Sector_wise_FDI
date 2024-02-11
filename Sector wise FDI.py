@@ -2,8 +2,6 @@
 # coding: utf-8
 
 # In[1]:
-
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -13,62 +11,40 @@ import plotly.express as px
 
 warnings.filterwarnings('ignore')
 
-
 # In[2]:
-
-
+#importing data
 df_fdi = pd.read_csv(r'D:\Internship Project\FDI data.csv')
 
-
 # Getting one with data
-
 # In[3]:
-
-
 df_fdi.head(5)
 
-
 # In[4]:
-
-
 df_fdi.info()
 
 
 # In[5]:
-
-
 df_fdi.Sector.unique()
 
 
 # In[6]:
-
-
 df_fdi.Sector.nunique()
 
 
 # In[7]:
-
-
 df_fdi.isnull().sum()
 
 
 # In[8]:
-
-
 df_fdi.duplicated().sum()
 
 
 # Visualizing the dataset
-
 # In[9]:
-
-
 df_fdi_new = df_fdi.set_index('Sector')
 
 
 # In[10]:
-
-
 df_fdi_trans = df_fdi_new.T
 df_fdi_trans.head()
 
