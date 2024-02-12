@@ -112,7 +112,7 @@ Mean Absolute Percentage Error, is a popular metric used to assess the accuracy 
 
 # Comparison between sectors
 <br>
-A function "get_comparison" helps to get compared visualized data between two sectors
+A function "get_comparison" helps to compare visualized data between sectors. As this will help investors to decide which sector to invest in future.
 <br>
 
 ![image](https://github.com/shashank-2010/Sector_wise_FDI/assets/153171192/eda11342-ed2e-42e8-b5c4-6fcb38b98a2c)
